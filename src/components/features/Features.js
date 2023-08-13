@@ -1,27 +1,28 @@
 import React from 'react'
 import Title from '../layout/Title';
+
 import Card from './Card';
 import { DiCodeBadge } from "react-icons/di";
 import { FaNodeJs, FaReact } from 'react-icons/fa';
 function Features() {
   return (
     <section id='features'
-      className="w-full h-[800px] py-20  border-b-[1px]  border-b-black">
-      <Title title='Features' des='MY SKILLS' />
-      <div className='grid grid-cols-3 gap-20'>
-        <Card title='Front-end-Development' des='I possess strong front-end development skills, creating captivating and responsive web experiences with HTML, CSS, JavaScript, and frameworks like React, while ensuring user-centric design and optimal performance.'
+      className="w-full py-20 border-b-[1px] border-b-black">
+      <Title title='What I Do' des='MY SERVICE' />
+     <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20'>
+        <Card title='Front-end-Development' des='Versatile front-end developer proficient in creating visually appealing and user-friendly interfaces. Experienced in HTML, CSS, JavaScript, and modern web frameworks.'
           icon={<DiCodeBadge />} />
-        <Card title='Backend Development' des='Proficient backend developer skilled in creating efficient APIs, optimizing databases, and implementing secure server-side operations. Passionate about building scalable and reliable web applications to enhance user experiences.'
+        <Card title='Backend Development' des='Experienced backend developer skilled in building robust APIs, managing databases, and ensuring seamless server-side functionality for efficient web applications.'
           icon={<FaNodeJs />} />
-        <Card title='Backend Development' des='Proficient backend developer skilled in creating efficient APIs, optimizing databases, and implementing secure server-side operations. Passionate about building scalable and reliable web applications to enhance user experiences.'
-          icon={<FaReact />} />
+       
         <Card title='React Development' des='
-Experienced React developer proficient in creating elegant and interactive user interfaces. Strong command of state management, component architecture, and modern frontend tools to deliver engaging and efficient web applications.'
+Proficient React developer with expertise in building interactive UIs, employing state management, and delivering high-quality web applications.'
           icon={<FaReact />} />
 
 
 
       </div>
+      
     </section>
   )
 }
