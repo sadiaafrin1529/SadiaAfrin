@@ -3,6 +3,8 @@ import React ,{useRef, useState } from 'react'
 import ContactLeft from './ContactLeft';
 import Title from '../layout/Title';
 import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2';
+import { ToastContainer, toast } from 'react-toastify';
 const Contacts = () => {
   const [errMsg, setErrMsg] = useState("");
   const [message, setMessage] = useState("");
@@ -11,6 +13,24 @@ const Contacts = () => {
   const onSubmit = data =>{ 
     console.log(data);
     reset()
+    Swal.fire({
+      
+      text: 'Message Send',
+      icon: 'success',
+     
+    })
+    
+    // toast.success('🦄 Wow so easy!', {
+    //   position: "top-right",
+    //   autoClose: 5000,
+    //   hideProgressBar: false,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   progress: undefined,
+    //   theme: "light",
+    //   });
+    
   }
   const form = useRef();
 
@@ -19,12 +39,14 @@ const Contacts = () => {
 
     emailjs.sendForm('service_tzjyk8c', 'template_y1xtzxd', form.current, 'bfTAdldtKnCJEXAUE')
       .then((result) => {
+        
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
   };
   return (
+    
     <section
       id="contact"
       className="w-full py-20 border-b-[1px] border-b-black"
@@ -97,7 +119,7 @@ const Contacts = () => {
         
       <input  className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent" type="submit" value="Send" />
 
-     
+      
     </form>
          </div>
           
