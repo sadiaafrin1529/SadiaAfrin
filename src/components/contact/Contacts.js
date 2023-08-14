@@ -4,7 +4,9 @@ import ContactLeft from './ContactLeft';
 import Title from '../layout/Title';
 import { useForm } from "react-hook-form";
 import Swal from 'sweetalert2';
-import toast, { Toaster } from 'react-hot-toast';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// import toast, { Toaster } from 'react-hot-toast';
 const Contacts = () => {
   const [errMsg, setErrMsg] = useState("");
   const [message, setMessage] = useState("");
@@ -14,7 +16,16 @@ const Contacts = () => {
     console.log(data);
     reset()
    
-    toast.success('Message Send')
+    toast.success('Message Send', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      });
     
     // toast.success('🦄 Wow so easy!', {
     //   position: "top-right",
@@ -115,7 +126,8 @@ const Contacts = () => {
         
       <input  className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent" type="submit" value="Send" />
 
-      <Toaster />
+      {/* <Toaster /> */}
+      <ToastContainer />
     </form>
          </div>
           
