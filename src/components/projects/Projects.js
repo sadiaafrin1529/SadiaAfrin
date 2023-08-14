@@ -20,6 +20,7 @@ const Projects = () => {
           src={two}
           livesite={'https://chef-recipe-e10c5.web.app/'}
           clientsite={'https://github.com/sadiaafrin1529/chefs'}
+          serversite={'https://github.com/sadiaafrin1529/server'}
           
         />
         <ProjectCard
@@ -28,7 +29,8 @@ const Projects = () => {
           //     Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
           src={projectOne}
           livesite={'https://dollproject-e5762.web.app/'}
-          clientsite={'https://github.com/sadiaafrin1529/dolls-shop'}        />
+          clientsite={'https://github.com/sadiaafrin1529/dolls-shop'}  
+          serversite={'https://github.com/sadiaafrin1529/toy-server'}      />
         <ProjectCard
           title="Arts&Craft"
           // des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -36,6 +38,7 @@ const Projects = () => {
           src={three}
          livesite={'https://arts-and-craft-6dd2b.web.app/'}
          clientsite={'https://github.com/sadiaafrin1529/summer-camp-client'}
+         serversite={'https://github.com/sadiaafrin1529/summer-camp-server'}
         />
        
        </div>
