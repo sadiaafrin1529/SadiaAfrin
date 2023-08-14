@@ -2,7 +2,7 @@ import React from 'react'
 import Title from '../layout/Title'
 import Slider from 'react-slick'
 import sadia from '../../assets/image/me4.png'
-import cv from '../../assets/image/CV.pdf'
+import cv from '../../assets/image/SadiaAfrin.pdf'
 import quote from '../../assets/image/quote.png'
 const Testimonial = () => {
     const settings = {
