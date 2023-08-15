@@ -13,25 +13,7 @@ const Projects = () => {
         des={'MY PROJECTS'}/>
        </div>
        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
-        <ProjectCard
-          title="Chef Recipe"
-          // des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          //     Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={two}
-          livesite={'https://chef-recipe-e10c5.web.app/'}
-          clientsite={'https://github.com/sadiaafrin1529/chefs'}
-          serversite={'https://github.com/sadiaafrin1529/server'}
-          
-        />
-        <ProjectCard
-          title="Dolls Shop"
-          // des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          //     Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectOne}
-          livesite={'https://dollproject-e5762.web.app/'}
-          clientsite={'https://github.com/sadiaafrin1529/dolls-shop'}  
-          serversite={'https://github.com/sadiaafrin1529/toy-server'}      />
-        <ProjectCard
+       <ProjectCard
           title="Arts&Craft"
           // des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           //     Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
@@ -41,6 +23,26 @@ const Projects = () => {
          serversite={'https://github.com/sadiaafrin1529/summer-camp-server'}
         />
        
+       
+        <ProjectCard
+          title="Dolls Shop"
+          // des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          //     Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          src={projectOne}
+          livesite={'https://dollproject-e5762.web.app/'}
+          clientsite={'https://github.com/sadiaafrin1529/dolls-shop'}  
+          serversite={'https://github.com/sadiaafrin1529/toy-server'}      />
+           <ProjectCard
+          title="Chef Recipe"
+          // des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          //     Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          src={two}
+          livesite={'https://chef-recipe-e10c5.web.app/'}
+          clientsite={'https://github.com/sadiaafrin1529/chefs'}
+          serversite={'https://github.com/sadiaafrin1529/server'}
+          
+        />
+        
        </div>
     </section>
   )
